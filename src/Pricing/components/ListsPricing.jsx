@@ -3,10 +3,10 @@ import React from 'react'
 export const ListsPricing = ({prices}) => {
 
   return (
-    <div className="row my-5">
-        <div className="col-12">
-            <div className=" card-group  ">
-                <div className="col">
+    <div className="  d-flex justify-content-center">
+        <div className="col-11">
+            <div className=" card-group">
+                <div className="col mb-4 mb-md-0">
                     <div className="card m-0 card__basic">
                         <div className="card-body">
                             <h5 className='type my-3'>Basic</h5>
@@ -19,11 +19,11 @@ export const ListsPricing = ({prices}) => {
                             <p className="characters">Send up to 3 GB</p>
                             <hr />
                             
-                            <button className='btn-pricing w-100 btn__more color__white'>Learn More</button>
+                            <button className='btn-pricing w-100 btn__more '>Learn More</button>
                         </div>
                     </div>
                 </div>
-                <div className="card m-0 card__basic card__middle">
+                <div className="card mb-4 mb-md-0 m-0 card__basic card__middle">
                         <div className="card-body color__white">
                             <h5 className='type my-3 color__white'>Master</h5>
                             <p className="pricing my-3 color__white"><span className='dollar'>$</span> {prices[1].price}</p>
@@ -35,7 +35,7 @@ export const ListsPricing = ({prices}) => {
                             <p className="characters">Send up to 20 GB</p>
                             <hr />
                             
-                            <button className=' w-100 btn__more text-degrade bg-white'>Learn More</button>
+                            <button className=' w-100 btn__middle'>Learn More</button>
                         </div>
                 </div>
                 <div className="card m-0 card__basic">
@@ -50,7 +50,7 @@ export const ListsPricing = ({prices}) => {
                             <p className="characters">Send up to 20 GB</p>
                             <hr />
                             
-                            <button className=' w-100 btn__more color__white'>Learn More</button>
+                            <button className=' w-100 btn__more '>Learn More</button>
                         </div>
                 </div>
                 

@@ -32,8 +32,15 @@ body{
 
 .card__middle{
     background: linear-gradient(to bottom,hsl(236, 72%, 79%), hsl(237, 63%, 64%)) ;
-    z-index: 101;transform: scale(1.09);
+    z-index: 101;
+    transform: scale(1.09);
     border-radius: .6rem!important;
+}
+
+@media(max-width:576px){
+    .card__middle{
+        transform: scale(1);
+    }
 }
 
 .characters{
@@ -50,12 +57,37 @@ body{
     font-size: .8rem;
     letter-spacing: .1rem;
     text-transform: uppercase;
-    transition: all .3s;
+    border-radius: .2rem;
+    color: white;
+}
+
+.btn__middle{
+    outline: none;
+    border: none;
+    background: white;
+    color: hsl(237, 63%, 64%)!important;
+    padding: .6rem 0rem;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    border-radius: .2rem;
+    color: white;
+}
+
+.btn__more:hover{
+    border: 1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+    background: white;
+}
+
+.btn__middle:hover{
+    background: hsl(237, 63%, 64%);
+    color: white!important;
+    border: 1px solid white;
 }
 
 .color__white{
     color: white!important;
-    transition: all .3s;
 }
 
 .btn-pricing{
@@ -64,19 +96,6 @@ body{
     height: 2.53rem;
     transition: all .3s;
 }
-
-.btn-pricing:hover{
-    border: 1px solid hsl(237, 63%, 64%);
-}
-
-.color__white:hover{
-    color: hsl(237, 63%, 64%)!important;
-}
-
-.btn__more:hover{
-    background: white;
-}
-
 
 
 .bg-white{
